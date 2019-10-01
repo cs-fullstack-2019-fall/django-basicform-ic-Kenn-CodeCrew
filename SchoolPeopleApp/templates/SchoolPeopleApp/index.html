@@ -6,10 +6,11 @@
 </head>
 <body>
 Test
-
 <form action="{% url 'gotForm' %}" method="POST">
     {% csrf_token %}
     <input type="text" name="textField">
+    <input type="password" name="passwordField">
+    <input type="checkbox" name="checkboxdField">
     <button>Submit</button>
 </form>
 </body>

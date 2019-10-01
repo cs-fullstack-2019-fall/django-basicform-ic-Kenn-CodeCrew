@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{myName}}</h1>
+<h1>{{myPassword}}</h1>
+{% for eachElement in schoolArray %}
+    <a href="{% url 'index' %}"><p>{{eachElement.name}} has {{eachElement.students}} students</p></a>
+{% endfor %}
+</body>
+</html>

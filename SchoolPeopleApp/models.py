@@ -8,7 +8,8 @@ class School(models.Model):
     county = models.CharField(max_length=200, default="")
     students = models.IntegerField(default=0)
     dateOpened = models.DateField(default="")
-
+    def __str__(self):
+        return f"{self.name} is in {self.county} with {self.students} students and opened on {self.dateOpened}"
 
 class People(models.Model):
     name = models.CharField(max_length=200, default="")
